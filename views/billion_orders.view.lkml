@@ -18,4 +18,19 @@ view: billion_orders {
     type: count
     drill_fields: [orders.id]
   }
+  measure :link1
+  {
+    type : string
+    sql: "https://www.google.com/" ;;
+  }
+  measure :link2
+  {
+    type : string
+    sql: "https://www.google.com/" ;;
+  }
+  measure :link3
+  {
+    type : string
+    sql: "https://www.google.com/" ;;
+  }
 }

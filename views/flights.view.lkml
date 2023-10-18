@@ -10,10 +10,26 @@ view: flights {
     timeframes: [raw, time, date, week, month, quarter, year]
     sql: ${TABLE}.arr_time ;;
   }
+  dimension_group:test_time  {
+    type:time
+    sql: CURRENT_TIMESTAMP() ;;
+    timeframes: [raw,date,time]
+    convert_tz: no
+    }
   dimension: cancelled {
     type: string
     sql: ${TABLE}.cancelled ;;
   }
+  parameter: arr_filter  {
+    type: unquoted
+    allowed_value: {
+      label: "Daily1"
+      value:"date"
+    }
+  }
+
+
+
   dimension: carrier {
     type: string
     sql: ${TABLE}.carrier ;;
