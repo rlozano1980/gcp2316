@@ -1,4 +1,5 @@
 connection: "thelook"
+##esto es un commentario
 
 # include all the views
 include: "/views/**/*.view.lkml"
