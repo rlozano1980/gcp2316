@@ -1,6 +1,8 @@
 connection: "thelook"
 ##esto es un commentario
 
+##dummy change
+
 # include all the views
 include: "/views/**/*.view.lkml"
 include: "/Datagroups.lkml"
